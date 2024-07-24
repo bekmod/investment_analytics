@@ -2,7 +2,19 @@
   margin: 0 auto;
   margin-bottom: 7rem;
   max-width: 97rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
+}
+
+.button {
+  padding: 0.75rem 2.5rem;
+  background: #fdfdfd;
+  border-radius: 0.625rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.1);
+}
+.button:hover {
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -22,6 +34,65 @@ a:visited {
 }
 
 body {
-  background-color: #f0f0f0;
+  background: #f0f0f0;
   font-family: "Rubik", sans-serif;
+}
+
+header {
+  background: url("../img/hero-bg.png") no-repeat center center/cover;
+}
+header .home-header-content {
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+}
+header .home-header-content > * {
+  flex: 1;
+}
+header ul {
+  display: flex;
+  grid-gap: 2.5rem;
+  font-size: 0.875rem;
+}
+header ul .active {
+  font-weight: 600;
+}
+header ul a {
+  transition: all 0.2s ease-in-out;
+}
+header ul a:hover {
+  color: #51b8b1;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .logo img {
+  margin-right: 1rem;
+}
+header .logo .logo-content {
+  padding: 0.75rem 2.5rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  background: #fdfdfd;
+}
+header .logo p {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+header .cta {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.875rem;
+}
+header .cta a {
+  color: #355b58;
+}
+header .cta a:hover {
+  color: #51b8b1;
 }
