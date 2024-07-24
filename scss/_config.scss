@@ -1,5 +1,21 @@
+// Settings
+$container-width: 97rem;
+
 // Colors
 $background-color: #f0f0f0;
+$h-color: #343638;
+$p-color: #4f5559;
 
 // Fonts
 $main-font: "Rubik", sans-serif;
+
+// Margins
+$section-big: 7rem;
+
+// Repeating elements
+.container {
+  margin: 0 auto;
+  margin-bottom: $section-big;
+  max-width: $container-width;
+  padding: 0 1rem;
+}
