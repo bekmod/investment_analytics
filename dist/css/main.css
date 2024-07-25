@@ -231,6 +231,7 @@ header .links {
 }
 #home-a .top {
   display: flex;
+  grid-gap: 2rem;
   align-items: center;
 }
 #home-a .top .section-title {
@@ -243,4 +244,7 @@ header .links {
 #home-a .about-cards {
   display: flex;
   grid-gap: 2rem;
+}
+#home-a .about-cards > * {
+  flex: 1;
 }

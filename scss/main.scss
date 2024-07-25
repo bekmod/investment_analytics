@@ -168,6 +168,7 @@ header {
 
   .top {
     display: flex;
+    grid-gap: 2rem;
     align-items: center;
 
     .section-title {
@@ -183,5 +184,9 @@ header {
   .about-cards {
     display: flex;
     grid-gap: $inner-small;
+
+    & > * {
+      flex: 1;
+    }
   }
 }
