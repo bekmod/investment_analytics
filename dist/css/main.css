@@ -30,6 +30,13 @@
   color: #343638;
 }
 
+.card-title-font {
+  font-size: 1.125rem;
+  color: #343638;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
 .body-font {
   font-size: 0.875rem;
   color: #4f5559;
@@ -65,6 +72,24 @@
 .button.primary:hover {
   background: #3e6b68;
   color: #ffffff;
+}
+
+.about-card {
+  padding: 2rem;
+  border-radius: 20px;
+  background: #fff;
+  background: color(display-p3 1 1 1);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 4px 24px 0px color(display-p3 0 0 0/0.03);
+}
+.about-card .card-icons {
+  display: flex;
+  align-items: center;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+.about-card .card-title-font {
+  margin-bottom: 1rem;
 }
 
 * {
@@ -209,8 +234,13 @@ header .links {
   align-items: center;
 }
 #home-a .top .section-title {
+  margin-bottom: 2rem;
   flex: 1;
 }
 #home-a .top p {
   flex: 2;
+}
+#home-a .about-cards {
+  display: flex;
+  grid-gap: 2rem;
 }

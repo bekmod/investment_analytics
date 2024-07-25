@@ -171,11 +171,17 @@ header {
     align-items: center;
 
     .section-title {
+      margin-bottom: $inner-small;
       flex: 1;
     }
 
     p {
       flex: 2;
     }
+  }
+
+  .about-cards {
+    display: flex;
+    grid-gap: $inner-small;
   }
 }
