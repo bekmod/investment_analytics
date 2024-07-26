@@ -281,3 +281,53 @@ header {
     }
   }
 }
+
+footer {
+  .container {
+    transform: translateY(-8rem);
+    display: flex;
+    grid-gap: $inner-small;
+
+    & > * {
+      flex: 1;
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    grid-gap: $inner-small;
+
+    & > * {
+      flex: 1;
+    }
+  }
+
+  .link-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      grid-gap: $inner-smaller;
+    }
+  }
+
+  .logo-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: $inner-small;
+
+    img {
+      margin-right: 1rem;
+    }
+
+    p {
+      font-size: $logo;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+}

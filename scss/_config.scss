@@ -90,6 +90,18 @@ $inner-smaller: 1rem;
   line-height: 1.5rem;
 }
 
+.footer-font {
+  font-size: $body-1;
+  color: $h-color;
+  font-weight: 500;
+}
+
+.main-link {
+  font-size: $tagline;
+  color: $sage-content;
+  font-weight: 500;
+}
+
 // Repeating elements
 .container {
   margin: 0 auto;
