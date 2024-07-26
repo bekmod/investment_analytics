@@ -190,3 +190,59 @@ header {
     }
   }
 }
+
+#home-b {
+  .container {
+    transform: translateY(-8rem);
+  }
+
+  .section-title {
+    margin-bottom: $inner-small;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); // 12 equal columns
+    grid-template-rows: auto;
+    grid-gap: $inner-small;
+
+    grid-template-areas:
+      "a a a a a a a b b b b b"
+      "c c c c d d d d e e e e"
+      "f f f f f g g g g g g g";
+  }
+
+  .feature-card {
+    .card-title-font {
+      margin-bottom: $inner-smaller;
+    }
+
+    &.a {
+      grid-area: a;
+    }
+
+    &.b {
+      grid-area: b;
+    }
+
+    &.c {
+      grid-area: c;
+    }
+
+    &.d {
+      grid-area: d;
+    }
+
+    &.e {
+      grid-area: e;
+    }
+
+    &.f {
+      grid-area: f;
+    }
+
+    &.g {
+      grid-area: g;
+    }
+  }
+}

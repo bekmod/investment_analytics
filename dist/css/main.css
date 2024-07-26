@@ -36,6 +36,9 @@
   font-weight: 500;
   line-height: 1.75rem;
 }
+.card-title-font span {
+  font-weight: 400;
+}
 
 .body-font {
   font-size: 0.875rem;
@@ -90,6 +93,17 @@
 }
 .about-card .card-title-font {
   margin-bottom: 1rem;
+}
+
+.feature-card {
+  padding: 2rem;
+  border-radius: 2.5rem;
+  height: 22rem;
+  background: radial-gradient(52.56% 42.32% at 34.74% 0%, rgba(0, 187, 178, 0.1) 0%, rgba(0, 187, 178, 0.1) 100%), url(<path-to-image>) lightgray 221px -113.906px/99.27% 157.196% no-repeat, #f6f6f6;
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 * {
@@ -247,4 +261,42 @@ header .links {
 }
 #home-a .about-cards > * {
   flex: 1;
+}
+
+#home-b .container {
+  transform: translateY(-8rem);
+}
+#home-b .section-title {
+  margin-bottom: 2rem;
+}
+#home-b .features-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 2rem;
+  grid-template-areas: "a a a a a a a b b b b b" "c c c c d d d d e e e e" "f f f f f g g g g g g g";
+}
+#home-b .feature-card .card-title-font {
+  margin-bottom: 1rem;
+}
+#home-b .feature-card.a {
+  grid-area: a;
+}
+#home-b .feature-card.b {
+  grid-area: b;
+}
+#home-b .feature-card.c {
+  grid-area: c;
+}
+#home-b .feature-card.d {
+  grid-area: d;
+}
+#home-b .feature-card.e {
+  grid-area: e;
+}
+#home-b .feature-card.f {
+  grid-area: f;
+}
+#home-b .feature-card.g {
+  grid-area: g;
 }
