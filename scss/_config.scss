@@ -26,6 +26,12 @@ $body-1: 0.875rem;
 $logo: 0.75rem;
 $number: 3rem;
 
+// Margins
+$section-big: 7rem;
+$inner-big: 4rem;
+$inner-small: 2rem;
+$inner-smaller: 1rem;
+
 // Font Styles
 .header-font {
   font-size: $header-1;
@@ -70,18 +76,19 @@ $number: 3rem;
   }
 }
 
+.section-description {
+  font-size: $header-5;
+  color: $p-color;
+  line-height: 1.5rem;
+  margin-top: $inner-small;
+}
+
 .body-font {
   font-size: $body-1;
   color: $p-color;
   font-weight: 400;
   line-height: 1.5rem;
 }
-
-// Margins
-$section-big: 7rem;
-$inner-big: 4rem;
-$inner-small: 2rem;
-$inner-smaller: 1rem;
 
 // Repeating elements
 .container {

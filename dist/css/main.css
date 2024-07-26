@@ -40,6 +40,13 @@
   font-weight: 400;
 }
 
+.section-description {
+  font-size: 1.125rem;
+  color: #4f5559;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+}
+
 .body-font {
   font-size: 0.875rem;
   color: #4f5559;
@@ -273,6 +280,7 @@ header .links {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   grid-gap: 2rem;
+  margin-bottom: 7rem;
   grid-template-areas: "a a a a a a a b b b b b" "c c c c d d d d e e e e" "f f f f f g g g g g g g";
 }
 #home-b .feature-card .card-title-font {
@@ -312,4 +320,19 @@ header .links {
 }
 #home-b .feature-card.g .feature-content {
   width: 50%;
+}
+#home-b .remaining-features {
+  display: flex;
+  grid-gap: 2rem;
+}
+#home-b .remaining-features > * {
+  flex: 1;
+}
+#home-b .remaining-features .remaining-feature {
+  display: flex;
+  justify-content: flex-start;
+}
+#home-b .remaining-features .remaining-feature:last-child {
+  text-align: right;
+  justify-content: flex-end;
 }

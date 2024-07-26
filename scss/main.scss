@@ -205,6 +205,7 @@ header {
     grid-template-columns: repeat(12, 1fr); // 12 equal columns
     grid-template-rows: auto;
     grid-gap: $inner-small;
+    margin-bottom: $section-big;
 
     grid-template-areas:
       "a a a a a a a b b b b b"
@@ -258,6 +259,24 @@ header {
 
       .feature-content {
         width: 50%;
+      }
+    }
+  }
+
+  .remaining-features {
+    display: flex;
+    grid-gap: $inner-small;
+    & > * {
+      flex: 1;
+    }
+
+    .remaining-feature {
+      display: flex;
+      justify-content: flex-start;
+
+      &:last-child {
+        text-align: right;
+        justify-content: flex-end;
       }
     }
   }
