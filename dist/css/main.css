@@ -98,8 +98,7 @@
 .feature-card {
   padding: 2rem;
   border-radius: 2.5rem;
-  height: 22rem;
-  background: radial-gradient(52.56% 42.32% at 34.74% 0%, rgba(0, 187, 178, 0.1) 0%, rgba(0, 187, 178, 0.1) 100%), url(<path-to-image>) lightgray 221px -113.906px/99.27% 157.196% no-repeat, #f6f6f6;
+  height: 23rem;
   box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.03);
   display: flex;
   justify-content: flex-start;
@@ -281,9 +280,13 @@ header .links {
 }
 #home-b .feature-card.a {
   grid-area: a;
+  background: url("../img/feature-1.png") no-repeat center center;
+  background-size: cover;
 }
 #home-b .feature-card.b {
   grid-area: b;
+  background: url("../img/feature-2.png") no-repeat center center;
+  background-size: cover;
 }
 #home-b .feature-card.c {
   grid-area: c;
@@ -296,7 +299,17 @@ header .links {
 }
 #home-b .feature-card.f {
   grid-area: f;
+  background: url("../img/feature-6.png") no-repeat center center;
+  background-size: cover;
+}
+#home-b .feature-card.f .feature-content {
+  width: 75%;
 }
 #home-b .feature-card.g {
   grid-area: g;
+  background: url("../img/feature-7.png") no-repeat center center;
+  background-size: cover;
+}
+#home-b .feature-card.g .feature-content {
+  width: 50%;
 }

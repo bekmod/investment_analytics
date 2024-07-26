@@ -219,10 +219,14 @@ header {
 
     &.a {
       grid-area: a;
+      background: url("../img/feature-1.png") no-repeat center center;
+      background-size: cover;
     }
 
     &.b {
       grid-area: b;
+      background: url("../img/feature-2.png") no-repeat center center;
+      background-size: cover;
     }
 
     &.c {
@@ -239,10 +243,22 @@ header {
 
     &.f {
       grid-area: f;
+      background: url("../img/feature-6.png") no-repeat center center;
+      background-size: cover;
+
+      .feature-content {
+        width: 75%;
+      }
     }
 
     &.g {
       grid-area: g;
+      background: url("../img/feature-7.png") no-repeat center center;
+      background-size: cover;
+
+      .feature-content {
+        width: 50%;
+      }
     }
   }
 }
