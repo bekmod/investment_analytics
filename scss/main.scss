@@ -120,6 +120,22 @@ header {
     }
   }
 
+  .second-title-line {
+    display: flex;
+    grid-gap: $inner-smaller;
+    align-items: center;
+  }
+
+  .img-bg {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-left: $hero-logo-pd;
+    padding-right: $hero-logo-pd;
+    background: $sage-content;
+    border-radius: 2rem;
+  }
+
   .hero-section-title {
     margin-top: $inner-big;
     margin-bottom: $inner-small;
@@ -290,9 +306,10 @@ header {
 
 footer {
   .container {
-    transform: translateY(-8rem);
+    // transform: translateY(-8rem);
     display: flex;
     grid-gap: $inner-small;
+    margin-bottom: $inner-big;
 
     & > * {
       flex: 1;
@@ -331,7 +348,7 @@ footer {
     }
 
     p {
-      font-size: $logo;
+      font-size: $tagline;
       text-transform: uppercase;
       font-weight: 500;
     }

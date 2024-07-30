@@ -102,7 +102,12 @@
   background: #fff;
   background: color(display-p3 1 1 1);
   box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.03);
-  box-shadow: 0px 4px 24px 0px color(display-p3 0 0 0/0.03);
+  transition: all 0.2s ease-in-out;
+  transform: scale(1, 1);
+}
+.about-card:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.05);
 }
 .about-card .card-icons {
   display: flex;
@@ -226,6 +231,20 @@ header .cta a {
 }
 header .cta a:hover {
   color: #51b8b1;
+}
+header .second-title-line {
+  display: flex;
+  grid-gap: 1rem;
+  align-items: center;
+}
+header .img-bg {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  background: #355b58;
+  border-radius: 2rem;
 }
 header .hero-section-title {
   margin-top: 4rem;
@@ -356,9 +375,9 @@ header .links {
 }
 
 footer .container {
-  transform: translateY(-8rem);
   display: flex;
   grid-gap: 2rem;
+  margin-bottom: 4rem;
 }
 footer .container > * {
   flex: 1;
@@ -390,7 +409,7 @@ footer .logo-content img {
   margin-right: 1rem;
 }
 footer .logo-content p {
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
 }
