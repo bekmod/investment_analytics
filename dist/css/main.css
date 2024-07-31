@@ -339,7 +339,7 @@ header .links {
 }
 #home-b .feature-card.e {
   grid-area: e;
-  background: url("../img/bg-card-e.png") no-repeat center center;
+  background: url("../img/card-e-2.png") no-repeat center center;
   background-size: cover;
 }
 #home-b .feature-card.f {
