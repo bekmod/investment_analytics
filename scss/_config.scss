@@ -4,6 +4,7 @@ $transition: all 0.2s ease-in-out;
 
 // Colors
 $background-color: #f0f0f0;
+$background-light: #f4f4f4;
 $white: #fdfdfd;
 $pure-white: #ffffff;
 $h-color: #343638;
@@ -170,6 +171,19 @@ $inner-smaller: 1rem;
 
   box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.03);
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $white;
+    border-radius: 0.5rem;
+    height: 48px;
+    width: 48px;
+    background: $background-light;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.02);
+  }
 }

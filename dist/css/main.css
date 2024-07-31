@@ -125,8 +125,20 @@
   height: 23rem;
   box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.03);
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.feature-card .feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fdfdfd;
+  border-radius: 0.5rem;
+  height: 48px;
+  width: 48px;
+  background: #f4f4f4;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.02);
 }
 
 * {
