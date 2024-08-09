@@ -9,6 +9,7 @@ $white: #fdfdfd;
 $pure-white: #ffffff;
 $h-color: #343638;
 $p-color: #4f5559;
+$placeholder-color: #969696;
 $sage-content: #355b58;
 $accent-color: #51b8b1;
 $grey-border: #e3e3e3;
@@ -78,11 +79,41 @@ $inner-smaller: 1rem;
   }
 }
 
+label {
+  font-size: $body-1;
+  color: $p-color;
+  font-weight: 500;
+  display: block;
+  margin-bottom: $inner-smaller;
+}
+
 .section-description {
   font-size: $header-5;
   color: $p-color;
   line-height: 1.5rem;
   margin-top: $inner-small;
+}
+
+.section-subtitle-text {
+  color: $p-color;
+  font-size: $header-4;
+  font-weight: 400;
+  line-height: 1.75rem;
+  margin-bottom: $inner-small;
+}
+
+.contact-group-title-font {
+  color: $h-color;
+  font-size: $header-4;
+  font-weight: 500;
+  margin-bottom: $inner-smaller;
+}
+
+.contact-group-subtitle-font {
+  color: $p-color;
+  font-size: $header-5;
+  font-weight: 400;
+  margin-bottom: $inner-smaller;
 }
 
 .body-font {
@@ -185,5 +216,25 @@ $inner-smaller: 1rem;
     width: 48px;
     background: $background-light;
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.02);
+  }
+}
+
+input,
+textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid $grey-border;
+  border-radius: 0.5rem;
+  font-size: $tagline;
+  font-weight: 400;
+  color: $placeholder-color;
+  transition: $transition;
+  background: none;
+
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+
+  &::placeholder {
+    color: $placeholder-color;
   }
 }

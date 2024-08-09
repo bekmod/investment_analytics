@@ -304,6 +304,129 @@ header {
   }
 }
 
+#home-d {
+  .section-title {
+    margin-bottom: $inner-small;
+  }
+
+  .form-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: $inner-small;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: $inner-small;
+
+    .form-group {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        input,
+        textarea {
+          width: 100%;
+        }
+      }
+
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7) {
+        grid-column: span 2;
+      }
+    }
+
+    .checkboxes {
+      grid-column: span 2;
+
+      .checkbox-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: $inner-smaller;
+
+        & > * {
+          display: flex;
+          grid-gap: $inner-smaller;
+          align-items: center;
+          justify-content: flex-start;
+
+          input[type="checkbox"] {
+            display: none;
+
+            & + label {
+              position: relative;
+              padding-left: 32px;
+              cursor: pointer;
+              user-select: none;
+
+              &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 18px;
+                height: 18px;
+                border: 2px solid $grey-border;
+                border-radius: 4px;
+                background-color: white;
+              }
+
+              &::after {
+                content: "";
+                position: absolute;
+                left: 6px;
+                top: 50%;
+                transform: translateY(-50%) scale(0);
+                width: 10px;
+                height: 10px;
+                background-color: $accent-color;
+                border-radius: 2px;
+                transition: transform 0.2s ease-in-out;
+              }
+            }
+
+            &:checked + label::after {
+              transform: translateY(-50%) scale(1);
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      grid-column: span 2;
+      width: 100%;
+      outline: none;
+      border: none;
+    }
+  }
+
+  .column {
+    &:last-child {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: $inner-small;
+    }
+  }
+
+  .contact-group-link {
+    display: flex;
+    align-items: center;
+    grid-gap: 0.5rem;
+    color: $h-color;
+    font-size: $body-1;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: $inner-smaller;
+  }
+}
+
 footer {
   .container {
     // transform: translateY(-8rem);
