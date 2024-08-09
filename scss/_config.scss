@@ -13,6 +13,7 @@ $placeholder-color: #969696;
 $sage-content: #355b58;
 $accent-color: #51b8b1;
 $grey-border: #e3e3e3;
+$nv-border-color: #d9d9d9;
 
 // Fonts
 $main-font: "Rubik", sans-serif;
@@ -222,7 +223,7 @@ label {
 input,
 textarea {
   padding: 0.75rem 1rem;
-  border: 1px solid $grey-border;
+  border: 2px solid $nv-border-color;
   border-radius: 0.5rem;
   font-size: $tagline;
   font-weight: 400;
