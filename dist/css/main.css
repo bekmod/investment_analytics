@@ -610,7 +610,7 @@ header .links {
   border-radius: 1rem;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .tab-content img {
   height: 32px;
@@ -626,9 +626,9 @@ header .links {
   margin-bottom: 2rem;
 }
 .tab-content ul {
-  margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
   row-gap: 1rem;
   column-gap: 2rem;
   justify-content: start;
@@ -639,10 +639,13 @@ header .links {
   margin: 0;
 }
 .tab-content ul li {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 .tab-content ul .section-description-smaller {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #343638;
+  font-weight: 500;
 }
 
 .tab-pane {
@@ -650,7 +653,24 @@ header .links {
 }
 
 .tab-pane.active {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tab-pane.active .tab-feature-image-1 {
+  height: 624px;
+  background: url("../img/tab-image-1.png") no-repeat center center/cover;
+}
+.tab-pane.active .tab-feature-image-2 {
+  height: 624px;
+  background: url("../img/tab-image-2.png") no-repeat center center/cover;
+}
+.tab-pane.active .tab-feature-image-3 {
+  height: 624px;
+  background: url("../img/tab-image-3.png") no-repeat center center/cover;
+}
+.tab-pane.active .tab-feature-image-4 {
+  height: 624px;
+  background: url("../img/tab-image-4.png") no-repeat center center/cover;
 }
 
 h2 {

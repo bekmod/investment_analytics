@@ -504,7 +504,7 @@ header {
     border-radius: 1rem;
     align-items: center;
     justify-content: center;
-    margin-bottom: $inner-smaller;
+    margin-bottom: $inner-small;
   }
 
   img {
@@ -525,12 +525,9 @@ header {
   }
 
   ul {
-    margin-top: $inner-small;
     display: grid;
-    grid-template-columns: repeat(
-      2,
-      auto
-    ); // Create two columns with auto width
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: $inner-small;
     row-gap: $inner-smaller; // Adjust the gap between columns and rows as needed
     column-gap: $inner-small;
     justify-content: start; // Align the grid to the start
@@ -541,11 +538,14 @@ header {
     margin: 0; // Remove default margin
 
     li {
-      margin-bottom: 0;
+      margin-bottom: $inner-small;
     }
 
     .section-description-smaller {
-      margin-bottom: 0;
+      margin-bottom: $inner-smaller;
+      font-size: $body-1;
+      color: $h-color;
+      font-weight: 500;
     }
   }
 }
@@ -555,7 +555,28 @@ header {
 }
 
 .tab-pane.active {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .tab-feature-image-1 {
+    height: 624px;
+    background: url("../img/tab-image-1.png") no-repeat center center / cover;
+  }
+
+  .tab-feature-image-2 {
+    height: 624px;
+    background: url("../img/tab-image-2.png") no-repeat center center / cover;
+  }
+
+  .tab-feature-image-3 {
+    height: 624px;
+    background: url("../img/tab-image-3.png") no-repeat center center / cover;
+  }
+
+  .tab-feature-image-4 {
+    height: 624px;
+    background: url("../img/tab-image-4.png") no-repeat center center / cover;
+  }
 }
 
 h2 {
