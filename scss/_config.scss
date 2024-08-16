@@ -56,6 +56,12 @@ $inner-smaller: 1rem;
   font-weight: 500;
 }
 
+.section-header-small {
+  font-size: $header-3;
+  color: $h-color;
+  font-weight: 500;
+}
+
 .section-tagline {
   font-size: $tagline;
   font-weight: 500;
@@ -93,6 +99,12 @@ label {
   color: $p-color;
   line-height: 1.75rem;
   margin-top: $inner-small;
+}
+
+.section-description-smaller {
+  font-size: $tagline;
+  color: $p-color;
+  line-height: 1.75rem;
 }
 
 .section-subtitle-text {

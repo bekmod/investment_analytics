@@ -56,8 +56,6 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    border-bottom: 1px solid $grey-border;
-
     & > * {
       flex: 1;
     }
@@ -305,6 +303,9 @@ header {
 }
 
 #home-d {
+  .container {
+    transform: translateY(-8rem);
+  }
   .section-title {
     margin-bottom: $inner-small;
   }
@@ -473,6 +474,9 @@ header {
 }
 
 .tab {
+  display: flex;
+  align-items: center;
+  grid-gap: $inner-smaller;
   padding: 0.75rem 1.5rem;
   background: transparent;
   border-radius: 0.625rem;
@@ -490,7 +494,60 @@ header {
 }
 
 .tab-content {
-  padding: 20px;
+  margin-top: $inner-small;
+
+  .tab-image {
+    display: inline-flex;
+    width: 80px;
+    height: 80px;
+    border: 2px solid $grey-border;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $inner-smaller;
+  }
+
+  img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .section-tagline {
+    margin-bottom: $inner-smaller;
+  }
+
+  .section-header-small {
+    margin-bottom: $inner-smaller;
+  }
+
+  .section-description-smaller {
+    margin-bottom: $inner-small;
+  }
+
+  ul {
+    margin-top: $inner-small;
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      auto
+    ); // Create two columns with auto width
+    row-gap: $inner-smaller; // Adjust the gap between columns and rows as needed
+    column-gap: $inner-small;
+    justify-content: start; // Align the grid to the start
+    width: auto; // Ensure the ul does not occupy full width
+    max-width: 100%; // Prevent it from exceeding the container's width
+    list-style: disc; // Remove default list styling
+    list-style-position: inside; // Ensure bullets are inside the padding area
+    margin: 0; // Remove default margin
+
+    li {
+      margin-bottom: 0;
+    }
+
+    .section-description-smaller {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .tab-pane {
