@@ -27,16 +27,16 @@
             </div>
             <ul>
               <li>
-                <a class="active" href="#">Home</a>
+                <a class="active" href="#home-header">Home</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a href="#home-a" data-scroll>About</a>
               </li>
               <li>
-                <a href="#">Features</a>
+                <a href="#home-b" data-scroll>Features</a>
               </li>
               <li>
-                <a href="#">Insights</a>
+                <a href="#home-c" data-scroll>Insights</a>
               </li>
               <li>
                 <a href="#">Docs</a>
@@ -70,14 +70,14 @@
             </div>
           </div>
           <p class="header-subtitle">
-            Informed decisions with our comprehensive research service on 1000
-            US Stocks. Get instant access to interactive reports, enhanced
+            Make informed decisions with our comprehensive research service on
+            1300 US stocks. Get instant access to interactive reports, enhanced
             factor-analysis framework, and automated ranking to identify
             opportunities
           </p>
           <div class="links">
-            <a class="button primary" href="">Access on Microsoft App Souce</a>
-            <a class="button" href="">Get in touch</a>
+            <a class="button primary" href="">Soon on Microsoft App Source</a>
+            <a class="button" href="#home-d" data-scroll>Get in touch</a>
           </div>
         </div>
       </div>
@@ -101,11 +101,11 @@
           </div>
           <p class="body-font">
             Take your investment analysis to the next level with US Stock
-            Insights by Investment Analytics. Our research service provides you
-            with interactive reports, updated every week, on 1000 US Stocks.
-            With our enhanced factor-analysis framework, you'll gain insights
-            into the most investment philosophies. Plus, our automated ranking
-            system helps you identify opportunities quickly and efficiently.
+            Insights. Our research service provides you with interactive reports
+            on 1300 US Stocks, updated every week. Get actionable insights
+            customized to your investment philosophy with our enhanced
+            factor-analysis framework. Plus, our automated ranking system helps
+            you identify opportunities quickly and efficiently.
           </p>
         </div>
 
@@ -154,7 +154,7 @@
             </p>
             <p class="body-font">
               Our team of experts provides you with comprehensive research on
-              1000 US Stocks, updated every week.
+              1300 US Stocks, updated every week.
             </p>
           </div>
 
@@ -198,7 +198,7 @@
             </div>
             <div class="feature-content">
               <p class="card-title-font">
-                1000 US <br />
+                1300 US <br />
                 securities
               </p>
               <p class="body-font">
@@ -321,9 +321,9 @@
                   Why a Factor Investment Framework?
                 </h2>
                 <p class="section-description">
-                  Factor investment has be backed by Nobel Laureates
-                  Multi-factor can consistently integrate Fundamental Analysis,
-                  Technical Analysis & Risk Management.
+                  Factor investing, supported by insights from Nobel Laureates,
+                  serves as the foundation for integrating fundamental analysis,
+                  technical analysis, and risk management.
                 </p>
               </div>
             </div>
@@ -346,7 +346,7 @@
 
     <!-- Home-c section -->
 
-    <section class="feature-section">
+    <section id="home-c" class="feature-section">
       <div class="container">
         <div class="top">
           <div class="section-title">
@@ -361,10 +361,9 @@
             </div>
           </div>
           <p class="section-description">
-            Our platform provides investment managers with a comprehensive suite
-            of tools and analytics, including proprietary 360-degree analysis
-            and smart portfolio building, to inform and optimize investment
-            decisions.
+            A comprehensive suite of tools and analytics, featuring proprietary
+            360-degree analysis and intelligent portfolio building, designed to
+            inform and optimize investment decisions.
           </p>
         </div>
         <div class="bottom">
@@ -452,7 +451,7 @@
                   <li class="section-description-smaller">
                     Short-term analysis
                   </li>
-                  <li class="section-description-smaller">Flows analysis</li>
+                  <li class="section-description-smaller">Flow dynamics</li>
                   <li class="section-description-smaller">Peer analysis</li>
                   <li class="section-description-smaller">GenAI narrative</li>
                   <li class="section-description-smaller">Quality analysis</li>
@@ -769,5 +768,22 @@
     </footer>
 
     <script src="js/index.js"></script>
+    <script>
+      document.querySelectorAll("a[data-scroll]").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+          const offset = -150; // Adjust this value as needed
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset + offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
   </body>
 </html>

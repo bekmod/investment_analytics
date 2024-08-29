@@ -203,6 +203,10 @@ textarea::placeholder {
   color: #969696;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
