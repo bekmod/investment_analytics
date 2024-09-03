@@ -326,22 +326,22 @@ header {
     grid-gap: $inner-small;
 
     .form-group {
-      &:nth-child(1),
       &:nth-child(2),
       &:nth-child(3),
-      &:nth-child(4),
-      &:nth-child(5) {
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7) {
         input,
         textarea {
           width: 100%;
         }
       }
 
-      &:nth-child(3),
       &:nth-child(4),
       &:nth-child(5),
       &:nth-child(6),
-      &:nth-child(7) {
+      &:nth-child(7),
+      &:nth-child(8) {
         grid-column: span 2;
       }
     }
