@@ -20,7 +20,7 @@ document.querySelectorAll('a[data-scroll]').forEach(anchor => {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-        const offset = -50; // Adjust this value as needed
+        const offset = -150; // Adjust this value as needed
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset + offset;
 
