@@ -1,6 +1,10 @@
 const tabs = document.querySelectorAll('.tab');
 const tabContent = document.querySelectorAll('.tab-pane');
 
+document.getElementById("menu-toggle").addEventListener("click", function () {
+    document.querySelector("header").classList.toggle("open");
+});
+
 tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => {
         const activeTab = document.querySelector('.tab.active');
@@ -28,6 +32,8 @@ document.querySelectorAll('a[data-scroll]').forEach(anchor => {
             top: offsetPosition,
             behavior: 'smooth'
         });
+
+        document.querySelector("header").classList.toggle("open");
     });
 });
 
