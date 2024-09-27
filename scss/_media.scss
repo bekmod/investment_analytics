@@ -3,6 +3,12 @@
     padding: 1.25rem 1.5rem;
   }
 
+  #home-header {
+    &::after {
+      background: none;
+    }
+  }
+
   header {
     .container {
       padding: 0;
@@ -188,6 +194,12 @@
           width: 100%;
         }
       }
+    }
+  }
+
+  footer {
+    .container {
+      flex-direction: column;
     }
   }
 }

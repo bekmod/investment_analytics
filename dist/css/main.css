@@ -832,6 +832,9 @@ footer .logo-content p {
   .button {
     padding: 1.25rem 1.5rem;
   }
+  #home-header::after {
+    background: none;
+  }
   header .container {
     padding: 0;
   }
@@ -953,5 +956,8 @@ footer .logo-content p {
   #home-d form .form-group input,
   #home-d form .form-group textarea {
     width: 100%;
+  }
+  footer .container {
+    flex-direction: column;
   }
 }
