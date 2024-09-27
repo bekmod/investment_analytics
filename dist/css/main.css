@@ -731,6 +731,9 @@ li {
   margin-bottom: 10px;
 }
 
+footer {
+  padding-bottom: 2rem;
+}
 footer .container {
   display: flex;
   grid-gap: 2rem;
