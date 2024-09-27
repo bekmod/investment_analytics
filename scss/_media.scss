@@ -1,5 +1,17 @@
 @media (max-width: 768px) {
+  .button {
+    padding: 1.25rem 1.5rem;
+  }
+
   header {
+    .container {
+      padding: 0;
+    }
+
+    .button {
+      text-align: center;
+    }
+
     .header-font {
       font-size: 2.75rem;
     }
@@ -9,6 +21,8 @@
     }
 
     .home-header-content {
+      padding: 2rem 2.1rem;
+
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -17,11 +31,16 @@
       backdrop-filter: blur(32px);
     }
 
+    .hero-section {
+      padding: 0 2rem;
+    }
+
     #menu-toggle {
       display: block !important;
     }
 
     .navigation {
+      padding: 0 2.5rem;
       flex-direction: column;
       position: absolute;
       width: 100%;

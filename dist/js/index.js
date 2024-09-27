@@ -33,7 +33,7 @@ document.querySelectorAll('a[data-scroll]').forEach(anchor => {
             behavior: 'smooth'
         });
 
-        document.querySelector("header").classList.toggle("open");
+        document.querySelector("header").classList.remove("open");
     });
 });
 
